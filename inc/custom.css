@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.fix{position:fixed;top:0;left:0;width:100%;z-index: 999;}
+.header-area {background: #e8ebf1;padding-top: 36px;padding-bottom: 47px;}
+.header {}
+.header-full-width {}
+.header-logo {display: inline-block;float: left;margin-right: 214px;}
+.header-logo a{text-decoration: none;}
+.header-logo a h1{font-family: 'Lato', sans-serif;font-weight: 900;font-size: 50px;color: #000000;margin: 0;}
+.header-logo h1 span{color: #2aacc8;font-family: 'Lato', sans-serif;font-weight: 400;margin-left: -14px;}
+.header-menu {display: inline-block;}
+.header-menu ul{margin: 0;margin-top: 15px;}
+.header-menu ul li{display: inline-block;font-family: 'Lato', sans-serif;font-weight: 700;font-size: 13px;text-transform: uppercase;position: relative;}
+.header-menu ul li a{color: #000000;text-decoration: none;padding: 15px 26px;}
+.header-menu ul li a:hover{border-top: 5px solid #2aacc8;background:#ffff;color:#2aacc8}
+
+.header-menu ul ul{position: absolute;top: 90%;left: 0;background: #fff;z-index: 999;width: 242px;border-bottom: 5px solid #2aacc8;padding-left: 10px;display: none;}
+.header-menu ul ul li{margin-top: 5px;display: block;font-family: 'Lato', sans-serif;font-weight: 400;border-bottom: 1px solid #e7e7e7;padding: 5px;}
+.header-menu ul ul li a{padding: 0;color: #000;}
+.header-menu ul ul li a:hover{color:#2aacc8;border-top:0;}
+.slider-area {
+}
+
+.slider {
+	background-image: url(../img/slider_img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.slider ul{}
+.slider ul li{}
+.main-slider-area h1{
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	padding-top: 123px;
+	padding-left: 60px;
+	padding-bottom: 160px;
+	width: 36%;
+	color: #000;
+}
+
+
+.service-area {
+}
+
+.service {
+	padding-top: 60px;
+	padding-bottom: 51px;
+	background: #e8ebf1;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+
+.single-service-title {
+}
+
+.service-title {
+	display: inline-block;
+	margin-bottom: 19px;
+}
+.service-title i{
+	width: 40px;
+	height: 40px;
+	background: #2aacc8;
+	color: #fff;
+	text-align: center;
+	padding-top: 13px;
+	border-radius: 200px;
+	display: inline-block;
+	float: left;
+}
+.service-title h3{
+	font-size: 15px;
+	display: inline-block;
+	color: #000000;
+	margin-left: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	margin-top: 11px;
+}
+
+.service-content p{
+	font-size: 13px;
+	color: #363636;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height: 20px;
+	width: 84%;
+	margin-bottom: 27px;
+}
+.service-read-more a{color: #2aacc8 !important;text-decoration: none;}
+
+.service-read-more i{
+	color: #242526;
+	margin-right: 9px;
+}
+.latest-work {
+}
+
+.latest {
+}
+.latest-title i{color: #2aacc8;display: inline-block;font-size: 20px;}
+.latest-title h4{display: inline-block;margin-left: 25px;font-size: 15px;color: #000000;font-family: 'Lato', sans-serif;font-weight: 700;text-transform: uppercase;}
+
+.latest-title {
+	border-bottom: 1px solid #d9d9d9;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.latest-thumbnail {
+}
+.latest-thumbnail img{
+	width: 100%;
+}
+.latest-thumbnail img:hover .latest-img-hover{display: block;}
+
+.latest-img-hover {
+	text-align: center;
+	background: #2aacc8;
+	padding: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 14px;
+	width: 90%;
+	display: none;
+}
+.latest-img-hover i{color: #fff;margin-right: 18px;margin-left: 18px;font-size: 20px;}
+
+
+.Testimonial-area {
+}
+
+.Testimonial {
+	padding-top: 21px;
+	padding-bottom: 40px;
+}
+.Testimonial-title {
+	padding-bottom: 18px;
+}
+.Testimonial-title i{
+	color: #2aacc8;
+	font-size: 22px;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+
+.Testimonial-title h3{
+	display: inline-block;
+	color: #000000;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+.Testimonial-content h6{color: #363636;}
+
+.Testimonial-content p{
+	color: #363636;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	width: 81%;
+	margin-bottom: 38px;
+}
+
+.our-client-title {
+	padding-bottom: 18px;
+}
+.our-client-title h3{display: inline-block;font-family: 'Lato', sans-serif;font-weight: 700;font-size: 15px;color: #000;}
+.our-client-title i{
+	color: #2aacc8;
+	font-size: 22px;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+.all-latest-works{padding-top: 20px;padding-bottom: 40px;border-bottom: 1px solid #dfe1e5;}
+
+.our-client-img img{
+	width: 32.7%;
+}
+.full-test{padding-bottom: 40px;};
+
+.testimonial-footer {
+}
+
+.download-psd-buttom {
+	display: inline-block;
+	background: #7ce0eb;
+	padding: 15px 18px;
+	border: 1px solid #2aacc8;
+	border-radius: 10px;
+	box-shadow: 0px 4px 9px 0px #2daec9;
+}
+.download-psd-buttom h3{
+	display: inline-block;
+	color: #0d0707;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	margin: 0;
+}
+.textimonial-all{background: #e8fcfe;padding: 30px 35px;border: 1px solid #81e4ed;}
+.download-psd-buttom i{
+	display: inline-block;
+	float: left;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 25px;
+}
+.testimonial-footer{}
+.testimonial-footer p{margin: 0;}
+.bislite-menu-hover{}
+.footer-area{}
+.footer{background: #e8ebf1;border-top: 1px solid #d9d9d9;padding-top: 33px;padding-bottom: 47px;}
+.about-us{margin-bottom: 43px;}
+.about-text{}
+.about-text p{color: #363636;font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 400;width: 94%;margin: 0;}
+
+.explore-title ul{margin: 0;}
+.explore-title ul li{list-style: none;}
+.explore-title ul li a{color: #363636;font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 400;text-decoration: none;text-transform: capitalize;}
+.contact-ti-style{color: #000000;font-size: 15px;font-family: 'Lato', sans-serif;font-weight: 700;margin-bottom: 27px;text-transform: uppercase;}
+.browser-title{}
+.browser-title ul{margin: 0;}
+.browser-title ul li{list-style: none;}
+.browser-title ul li a{color: #363636;font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 400;text-decoration: none;text-transform: capitalize;}
+
+.contact-title{}
+.contact-title h5{font-family: 'Lato', sans-serif;font-weight: 700;font-size: 14px;color: #363636;}
+.contact-title p{font-size: 14px;color: #363636;font-family: 'Lato', sans-serif;font-weight: 400;}
+.connect-social{display: inline-block;width: 85%;}
+.connect-social-icon1{display: inline-block;float: left;width: 40px;height: 40px;background: #3b5998;text-align: center;border-radius: 200px;border: 5px solid #fff;box-shadow: 0px 0px 2px 4px #9b9da0;margin: 15px;}
+.connect-social-icon1 a{}
+.connect-social-icon1 a i{color: #fff;padding-top: 7px;}
+.connect-social-icon2{display: inline-block;float: left;width: 40px;height: 40px;background: #ea4e8a;text-align: center;border-radius: 200px;border: 5px solid #fff;box-shadow: 0px 0px 2px 4px #9b9da0;margin: 15px;}
+.connect-social-icon2 a{}
+.connect-social-icon2 a i{color: #fff;padding-top: 7px;}
+.connect-social-icon3{display: inline-block;float: left;width: 40px;height: 40px;background: #cb2027;text-align: center;border-radius: 200px;border: 5px solid #fff;box-shadow: 0px 0px 2px 4px #9b9da0;margin: 15px;}
+.connect-social-icon3 i{color: #fff;padding-top: 7px;}
+.connect-social-icon4{display: inline-block;float: left;width: 40px;height: 40px;background: #3399cc;text-align: center;border-radius: 200px;border: 5px solid #fff;box-shadow: 0px 0px 2px 4px #9b9da0;margin: 15px;}
+.connect-social-icon4 i{color: #fff;padding-top: 7px;}
+.connect-social-icon5{display: inline-block;float: left;width: 40px;height: 40px;background: #00aff0;text-align: center;border-radius: 200px;border: 5px solid #fff;box-shadow: 0px 0px 2px 4px #9b9da0;margin: 15px;}
+.connect-social-icon5 i{color: #fff;padding-top: 7px;}
+.connect-social-icon6{display: inline-block;float: left;width: 40px;height: 40px;background: #21a61b;text-align: center;border-radius: 200px;border: 5px solid #fff;box-shadow: 0px 0px 2px 4px #9b9da0;margin: 15px;}
+.connect-social-icon6 i{color: #fff;padding-top: 7px;}
+.footer-logo{margin-left: 35px;}
+.footer-logo a{text-decoration: none;}
+.footer-logo h1{font-family: 'Lato', sans-serif;font-weight: 900;font-size: 50px;color: #000000;margin: 0;}
+.footer-logo h1 span{color: #2aacc8;font-family: 'Lato', sans-serif;font-weight: 400;}
+.copyright{display: inline-block;float: left;}
+.copyright p{color: #363636;font-size: 13px;font-family: 'Lato', sans-serif;font-weight: 400;width: 80%;line-height: 18px;}
