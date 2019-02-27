@@ -27,6 +27,7 @@
 		loop: true,
 		items: 1,
 		autoplay:true,
+		nav:true,
 	});
 
 

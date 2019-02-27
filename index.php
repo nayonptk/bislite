@@ -21,9 +21,7 @@ get_header(); ?>
 				<div class="col-xl-12">
 					<div class="carousel-slider">
 						<div class="main-slider-area owl-carousel">
-							<h1>We design clean, crisp & memorable icons</h1>
-							<h1>We design clean, crisp & memorable icons</h1>
-							<h1>We design clean, crisp & memorable icons</h1>
+							<h1><?php echo $redux_demo['slide'][0]['description']; ?></h1>
 						</div>
 					</div>
 				</div>
@@ -36,71 +34,30 @@ get_header(); ?>
 	<div class="service"> 
 		<div class="container"> 
 			<div class="row"> 
-				
+
+		 <?php $service = new WP_Query(array( 
+	          	'post_type' => 'service-post',
+	            'posts_per_page' => 4,
+	  ));?>
+			<?php while($service->have_posts()) : $service->the_post(); ?>
 				<!--single-post-service-->
 				<div class="col-xl-3"> 
 					<div class="single-service-title"> 
 						<div class="service-title"> 
 							<i class="fas fa-pencil-alt"></i>
-							<h3>Clean Theme</h3>
+							<h3><?php echo the_title();?></h3>
 						</div>
 						<div class="service-content">
-							<p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
+						<p><?php echo wp_trim_words(get_the_content(),27,NULL); ?></p>
 						</div>
 						<div class="service-read-more"> 
 							<i class="fas fa-angle-right"></i>
-							<a href="">Read More</a>
+							<a href="<?php echo the_permalink(); ?>">Read More</a>
 						</div>
 					</div>
 				</div>		<!--single-post-service /-->					
-				<!--single-post-service-->
-				<div class="col-xl-3"> 
-					<div class="single-service-title"> 
-						<div class="service-title"> 
-							<i class="fas fa-expand"></i>
-							<h3>Responsive Design</h3>
-						</div>
-						<div class="service-content">
-							<p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
-						</div>
-						<div class="service-read-more"> 
-							<i class="fas fa-angle-right"></i>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>		<!--single-post-service /-->					
-				<!--single-post-service-->
-				<div class="col-xl-3"> 
-					<div class="single-service-title"> 
-						<div class="service-title"> 
-							<i class="fas fa-pencil-alt"></i>
-							<h3>Fully layerd PSD</h3>
-						</div>
-						<div class="service-content">
-							<p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
-						</div>
-						<div class="service-read-more"> 
-							<i class="fas fa-angle-right"></i>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>		<!--single-post-service /-->					
-				<!--single-post-service-->
-				<div class="col-xl-3"> 
-					<div class="single-service-title"> 
-						<div class="service-title"> 
-							<i class="fab fa-telegram-plane"></i>
-							<h3>Ready for coding</h3>
-						</div>
-						<div class="service-content">
-							<p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
-						</div>
-						<div class="service-read-more"> 
-							<i class="fas fa-angle-right"></i>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>		<!--single-post-service /-->
+	
+				<?php endwhile; ?>
 
 			</div>
 		</div>
@@ -116,7 +73,7 @@ get_header(); ?>
 			<div class="all-latest-works owl-carousel">
 				<div class="row"> 
 					<!--latest thumbnail-->
-					<div class="col-xl-3"> 
+					<div class="col-xl-3 latest-hob"> 
 						<div class="latest-thumbnail"> 
 							<img src="<?php echo get_template_directory_uri();?>/img/latest-work.jpg" alt="">
 						</div>
@@ -126,7 +83,7 @@ get_header(); ?>
 						</div>
 					</div>	<!--latest thumbnail-->
 					<!--latest thumbnail-->
-					<div class="col-xl-3"> 
+					<div class="col-xl-3 latest-hob"> 
 						<div class="latest-thumbnail"> 
 							<img src="<?php echo get_template_directory_uri();?>/img/latest-work-img-2.jpg" alt="">
 						</div>
@@ -136,7 +93,7 @@ get_header(); ?>
 						</div>
 					</div>	<!--latest thumbnail-->
 					<!--latest thumbnail-->
-					<div class="col-xl-3"> 
+					<div class="col-xl-3 latest-hob"> 
 						<div class="latest-thumbnail"> 
 							<img src="<?php echo get_template_directory_uri();?>/img/latest-work-img-3.jpg" alt="">
 						</div>
@@ -146,7 +103,7 @@ get_header(); ?>
 						</div>
 					</div>	<!--latest thumbnail-->
 					<!--latest thumbnail-->
-					<div class="col-xl-3"> 
+					<div class="col-xl-3 latest-hob"> 
 						<div class="latest-thumbnail"> 
 							<img src="<?php echo get_template_directory_uri();?>/img/latest-work-img-4.jpg" alt="">
 						</div>
@@ -167,39 +124,39 @@ get_header(); ?>
 				<div class="col-xl-6"> 
 					<div class="Testimonial-title"> 
 						<i class="fas fa-sms"></i>
-						<h3>Testimonials</h3>
+						<h3><?php echo $redux_demo['tmonial-title'];?></h3>
 					</div>
 					<div class="Testimonial-content"> 
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo aliquam metus, sed iaculis nibh tempus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam nec nisi in nisl euismod fringilla.</p>
-						<h6>John Travis, CEO, DomainName.com</h6>
+						<p><?php echo $redux_demo['tmonial-content']; ?></p>
+						<h6><?php echo $redux_demo['t-name']; ?></h6>
 					</div>
 				</div>
 
 				<div class="col-xl-6"> 
 					<div class="our-client-title"> 
 						<i class="fas fa-user-friends"></i>
-						<h3>Our Clients</h3>
+						<h3><?php echo $redux_demo['client-title'];?></h3>
 					</div>
 					<div class="our-client-img"> 
-						<img src="<?php echo get_template_directory_uri();?>/img/client-logo-1.jpg" alt="">	
-						<img src="<?php echo get_template_directory_uri();?>/img/client-logo-2.jpg" alt="">	
-						<img src="<?php echo get_template_directory_uri();?>/img/client-logo-3.jpg" alt="">	
-						<img src="<?php echo get_template_directory_uri();?>/img/client-logo-4.jpg" alt="">	
-						<img src="<?php echo get_template_directory_uri();?>/img/client-logo-5.jpg" alt="">	
-						<img src="<?php echo get_template_directory_uri();?>/img/client-logo-6.jpg" alt="">
+						<img src="<?php echo $redux_demo['clients-img1']['url'];?>" alt="">	
+						<img src="<?php echo $redux_demo['clients-img2']['url'];?>" alt="">	
+						<img src="<?php echo $redux_demo['clients-img3']['url'];?>" alt="">	
+						<img src="<?php echo $redux_demo['clients-img4']['url'];?>" alt="">	
+						<img src="<?php echo $redux_demo['clients-img5']['url'];?>" alt="">	
+						<img src="<?php echo $redux_demo['clients-img6']['url'];?>" alt="">
 					</div>
 				</div>
 			</div>
 			<div class="row textimonial-all"> 
 				<div class="col-xl-9"> 
 					<div class="testimonial-footer"> 
-						<p>This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal or client works. So ahead and download this wonderful PSD template! </p>
+						<p><?php echo $redux_demo['download-content']; ?></p>
 					</div>
 				</div>
 				<div class="col-xl-3"> 
 					<div class="download-psd-buttom"> 
 						<a href=""><i class="fas fa-download"></i></a>
-						<a href=""><h3>Download PSD</h3></a>
+						<a href=""><h3><?php echo $redux_demo['download-link-name']; ?></h3></a>
 					</div>
 				</div>
 

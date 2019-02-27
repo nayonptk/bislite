@@ -22,7 +22,7 @@
 .header-menu ul ul li a:hover{color:#2aacc8;border-top:0;}
 .slider-area {
 }
-
+.latest-hob{}
 .slider {
 	background-image: url(../img/slider_img.jpg);
 	background-repeat: no-repeat;
@@ -92,6 +92,7 @@
 	line-height: 20px;
 	width: 84%;
 	margin-bottom: 27px;
+	height: 120px;
 }
 .service-read-more a{color: #2aacc8 !important;text-decoration: none;}
 
@@ -118,7 +119,7 @@
 .latest-thumbnail img{
 	width: 100%;
 }
-.latest-thumbnail img:hover .latest-img-hover{display: block;}
+.latest-hob:hover .latest-img-hover{display: block;transition: 1s;}
 
 .latest-img-hover {
 	text-align: center;
@@ -181,7 +182,7 @@
 	float: left;
 	margin-right: 15px;
 }
-.all-latest-works{padding-top: 20px;padding-bottom: 40px;border-bottom: 1px solid #dfe1e5;}
+.all-latest-works{padding-top:20px;padding-bottom: 40px;border-bottom: 1px solid #dfe1e5;}
 
 .our-client-img img{
 	width: 32.7%;
@@ -257,3 +258,4 @@
 .footer-logo h1 span{color: #2aacc8;font-family: 'Lato', sans-serif;font-weight: 400;}
 .copyright{display: inline-block;float: left;}
 .copyright p{color: #363636;font-size: 13px;font-family: 'Lato', sans-serif;font-weight: 400;width: 80%;line-height: 18px;}
+.widget{list-style: none;}

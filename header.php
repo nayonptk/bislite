@@ -28,33 +28,12 @@
 			<div class="row"> 
 				<div class="header-full-width"> 
 					<div class="header-logo"> 
-						<a href=""><h1>Bis <span>Lite</span></h1></a>
+						<a href="<?php echo esc_url(site_url());?>"><h1>Bis <span>Lite</span></h1></a>
 					</div>
 					<div class="header-menu"> 
-						<ul>
-							<li><a href="">home</a></li>
-							<li><a href="">about us</a></li>
-							<li><a href="">service</a>
-									<ul>
-										<li><a href=""> web design</a></li>
-										<li><a href="">wordPress design</a></li>
-										<li><a href="">mobile app devplopment</a></li>
-										<li><a href="">internet marketing</a></li>
-										<li><a href="">social media management</a></li>
-									</ul>
-								</li>
-							<li><a href="">portfolio</a>
-									<ul>
-										<li><a href=""> web design</a></li>
-										<li><a href="">wordPress design</a></li>
-										<li><a href="">mobile app devplopment</a></li>
-										<li><a href="">internet marketing</a></li>
-										<li><a href="">social media management</a></li>
-									</ul>
-								</li>
-								<li><a href="">blog</a></li>
-								<li><a href="">contact us</a></li>								
-						</ul>
+			           <?php wp_nav_menu( array(
+	                        'theme_location'  => 'main-menu',
+	                      ) ); ?>
 						<div class="bislite-menu-hover"> </div>
 					</div>
 				</div>
